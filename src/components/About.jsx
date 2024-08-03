@@ -51,7 +51,7 @@ export default function About() {
 
 
                         <img
-                            src="src/images/gitl.png"
+                            src="src/Image/gitl.png"
                             alt="About Us"
                             className="w-full h-auto rounded-md shadow-lg"
                         />

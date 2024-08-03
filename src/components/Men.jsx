@@ -8,7 +8,7 @@ export default function Men() {
   return (
     <div>
         
- <GaneralBanner image = "src/images/Men.png" btnname = "Shop Men Shoes" h1 = "Lex Louning" p1  ="Relax in style with our sophisticated selection "  />
+ <GaneralBanner image = "src/Image/Men.png" btnname = "Shop Men Shoes" h1 = "Lex Louning" p1  ="Relax in style with our sophisticated selection "  />
  <br /><br /><br /><br />
 
 <Banner h1  ="Men's Collection" p1 = "Most Popular prodcuts for men" />

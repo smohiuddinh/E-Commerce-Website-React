@@ -3,11 +3,11 @@ import React, { useState, useEffect } from 'react';
 export default function Hero() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const slides = [
-    'src/images/HOME3.png',
-    'src/images/h4.png',
-    'src/images/h3.png',
-    'src/images/HOME3.png',
-    'src/images/h6.png',
+    'src/Image/HOME3.png',
+    'src/Image/h4.png',
+    'src/Image/h3.png',
+    'src/Image/HOME3.png',
+    'src/Image/h6.png',
   ];
 
   const nextSlide = () => {

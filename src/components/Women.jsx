@@ -8,7 +8,7 @@ export default function Women() {
         <div>
 
 <GaneralBanner                 
-                 image="src/images/Women.png" 
+                 image="src/Image/Women.png" 
                 btnname="Shop Women Shoes" 
                 h1="ALL-DAY DAZZLE" 
                 p1="Timeless Pieces with a Fashion-Forward Twist"
