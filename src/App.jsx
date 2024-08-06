@@ -1,48 +1,58 @@
+// src/App.js
 import React from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { AuthProvider } from '../src/Context/AuthContext';
 import Layout from './components/Layout';
 import Home from './components/Home';
 import MyCart from './components/MyCart';
 import About from './components/About';
 import Men from './components/Men';
 import Women from './components/Women';
-import LoginForm from './components/LoginForm'; // Import the LoginForm component
+import LoginForm from './components/LoginForm';
+import ProtectedRoute from './components/ProtectedRoute';
+import { ToastContainer } from 'react-toastify'; // Import ToastContainer
+import 'react-toastify/dist/ReactToastify.css'; // Import CSS for ToastContainer
 
 function App() {
-  const router = createBrowserRouter([
-    {
-      path: '/',
-      element: <Layout />,
-      children: [
+    const router = createBrowserRouter([
         {
-          path: '/',
-          element: <Home />,
+            path: '/',
+            element: <Layout />,
+            children: [
+                {
+                    path: '/',
+                    element: <Home />,
+                },
+                {
+                    path: '/about',
+                    element: <About />,
+                },
+                {
+                    path: '/mycart',
+                    element: <ProtectedRoute element={<MyCart />} />,
+                },
+                {
+                    path: '/men',
+                    element: <Men />,
+                },
+                {
+                    path: '/women',
+                    element: <Women />,
+                },
+                {
+                    path: '/loginform',
+                    element: <LoginForm />,
+                },
+            ],
         },
-        {
-          path: '/About',
-          element: <About />,
-        },
-        {
-          path: '/MyCart',
-          element: <MyCart />,
-        },
-        {
-          path: '/Men',
-          element: <Men />,
-        },
-        {
-          path: '/Women',
-          element: <Women />,
-        },
-        {
-          path: '/LoginForm', 
-          element: <LoginForm />,
-        },
-      ],
-    },
-  ]);
+    ]);
 
-  return <RouterProvider router={router} />;
+    return (
+        <AuthProvider>
+            <RouterProvider router={router} />
+            <ToastContainer /> {/* Add ToastContainer here */}
+        </AuthProvider>
+    );
 }
 
 export default App;

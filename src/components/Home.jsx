@@ -3,8 +3,6 @@ import Cart from './Cart';
 import Banner from './Banner';
 import Hero from './Hero';
 import Products from './Products';
-import ProductCarousel from './ProductCarousel';
-import NewsLetter from './NewsLetter';
 
 const Home = () => {
   return (
