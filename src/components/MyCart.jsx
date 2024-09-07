@@ -5,7 +5,6 @@ const MyCart = () => {
   return (
     <div>
       <ListItems />
-      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
     </div>
   );
 };

@@ -6,17 +6,13 @@ import Products from './Products';
 
 const Home = () => {
   return (
-    <>
+    <div className='flex flex-col gap-3' >
       <Hero />
-      <br /><br />
-      <br /><br />
+      
       <Banner id='products' h1 = "Our Products" p1 = "Avaiable At Flat 39% Discount!"/>
-      <br /><br />
-      <br></br>
-      {/* <ProductCarousel /> */}
 
      <Products/>
-    </>
+    </div>
   );
 };
 

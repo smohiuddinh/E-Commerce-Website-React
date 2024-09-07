@@ -11,8 +11,6 @@ export default function About() {
                         <p className="text-lg leading-relaxed mb-6">
                             Born to generations of shoe manufacturers, our founder Daniel Rubin was destined to follow in their footsteps with a shoe empire of his own. In 1992 Dune London was born, beginning as a small concession store on London's iconic Oxford Street. The dream was simple - to create an affordable luxury footwear and accessories brand. Daniel understood from day one the importance of a perfect pair of shoes for the right occasion, and it's with this ethos that the brand has built its reputation and grown. As the name suggests, we also love London, our home. As the epicentre of fashion with its vibrant, diverse and creative energy, it's a city that constantly inspires us. Fast forward to today, and we now have over 350 store locations worldwide. We're London born, globally worn.
                         </p>
-
-
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
                             <div>
                                 <h1 className='font-bold'>Your Shoes, Our Passion                                </h1>

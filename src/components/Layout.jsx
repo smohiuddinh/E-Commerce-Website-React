@@ -12,9 +12,10 @@ const Layout = () => {
       <Navbar />
       <Bar p1="Discover our trend-led and timeless collection" color="bg-barcolor" tcolor="text-white" />
       <Outlet />
-      <br />
       <ScrollTopBtn />
+      <div className="mt-8">
       <Footer />
+      </div>
 
     
     </>

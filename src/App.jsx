@@ -12,8 +12,12 @@ import LoginForm from './components/LoginForm';
 import ProtectedRoute from './components/ProtectedRoute';
 import { ToastContainer } from 'react-toastify'; // Import ToastContainer
 import 'react-toastify/dist/ReactToastify.css'; // Import CSS for ToastContainer
+import Checkout from './components/Checkout';
+
 
 function App() {
+    
+    
     const router = createBrowserRouter([
         {
             path: '/',
@@ -29,7 +33,7 @@ function App() {
                 },
                 {
                     path: '/mycart',
-                    element: <ProtectedRoute element={<MyCart />} />,
+                    element:<MyCart />,
                 },
                 {
                     path: '/men',
@@ -43,6 +47,10 @@ function App() {
                     path: '/loginform',
                     element: <LoginForm />,
                 },
+                {
+                    path : '/Checkout',
+                    element: <ProtectedRoute element={<Checkout />} />,
+                }
             ],
         },
     ]);

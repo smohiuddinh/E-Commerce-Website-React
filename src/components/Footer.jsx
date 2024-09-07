@@ -20,8 +20,7 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="footer bg-barcolor text-white   py-4 font-serif
-">
+    <footer className=" flex flex-col  bg-barcolor text-white   py-4 font-serif">
       <div className="container mx-auto px-4  ">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
           <div>
